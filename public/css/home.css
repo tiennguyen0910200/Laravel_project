@@ -1,0 +1,155 @@
+.title{
+   color: #ff828d;
+   text-align: center;
+}
+.name{
+	text-align: center;
+}
+.name:hover{
+	color: #f63a80;
+}
+.img{
+	width: 250px; 
+	height: 250px;
+}
+.img:hover{
+	transform: scale(1.1);
+}
+a{
+	text-decoration: none;
+}
+input {
+    outline: none;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none; 
+}
+
+
+input[type=search] {
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 4px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 75px;
+    
+    -webkit-border-radius: 30em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+    
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+#search input[type=search] {
+    width: 35px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+}
+#search input[type=search]:hover {
+    background-color: #fff;
+}
+#search input[type=search]:focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+#search input:-moz-placeholder {
+    color: transparent;
+}
+#search input::-webkit-input-placeholder {
+    color: transparent;
+}
+.checked {
+  color: orange;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #f1ae97;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: black;
+}
