@@ -39,10 +39,9 @@ Route::get('/user/cart/{id}',"Auth\CartController@addCart");
 Route::delete('/user/cart/{id}',"Auth\CartController@destroyCart" );
 Route::get('/user/cart/{id}/increase',"Auth\CartController@increase");
 Route::get('/user/cart/{id}/crease',"Auth\CartController@crease");
-// Route::get('add-to-cart/{id}',['as'=>'themgiohang','uses'=>'HomeController@getAddtoCart']);
+Route::get('/user/search',"User\HomeController@search");
+Route::get('/user/pay',"User\HomeController@pay");
 
-
- // Route::get('/img/create', "HomeConTroller@create" );
  
 
 

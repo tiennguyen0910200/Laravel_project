@@ -71,8 +71,9 @@
 				<h5>Giao Nhận: </h5>
 				<h5>Giảm: </h5>
 				<h4><b>Tổng tiền thanh toán: {{number_format($total)}}VND</b></h4>
-
-				<button type="submit" class="btn btn-danger">Thanh Toán</button>
+				<form method="GET" action="/user/pay">
+					<button type="submit" class="btn btn-danger">Thanh Toán</button>
+				</form>
 			</div>
 		</div>
 

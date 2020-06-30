@@ -17,26 +17,7 @@
 </head>
 <body>
 	@include('partials\head')<br>
-	<div class="navbar">
-		<a href="/home">Home</a>
-		<a href="/home">Lipstip</a>
-		<div class="dropdown">
-			<button class="dropbtn">Dropdown 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div> 
-		<div class="col-sm-6" style="margin-right: -550px;">
-			<form action="/search" method="POST" role="search" id="search">
-				<input type="search" name="search" placeholder="Search">
-			</form>
-		</div>
-	</div>
-	<br>
+	@include('partials\menubar')<br>
 	@include('partials\slide')<br>
 	<h1 class="title">SẢN PHẨM KHUYẾN MÃI</h1>
 	<br>

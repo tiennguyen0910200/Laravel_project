@@ -30,10 +30,14 @@ class HomeController extends Controller
     	$sanpham = DB::table('sons')->where('id',$req->id)->first();
     	return view("user.cart",compact('sanpham'));
     }
-	function search(){
-         $search = $request->input('search');
-         $son = User::with('services', function($query) use ($category) {
-         $query->where('category', 'LIKE', '%' . $category . '%');
-    })->get();
+	function search(Request $request)
+    {
+        $txt = $request->input('txtSearch');
+        $search = DB::table('sons')->where('name', 'LIKE', '%' . $txt . '%')->get();
+        return view('user.search', ['research' => $search]);
+    }
+    function pay(Request $request){
+        $son = DB::table('sons')->where('id',$request->id)->first();
+        return view("user.pay",['son'=> $son]);
     }
 }
