@@ -21,7 +21,6 @@ class CreateTableOrders extends Migration
             $table->string('phone');
             $table->string('address');
             $table->longText('detail');
-            $table->integer('total');
             $table->timestamps();
         });
     }

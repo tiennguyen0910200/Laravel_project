@@ -69,7 +69,8 @@ function order(Request $request){
     "address" => $address,
     "detail" =>$detail,
 ]);
- 
+ DB::table('carts')->where('user_id', '=', Auth::user()->id)->delete();
+ return redirect('home');
  
 }
 }

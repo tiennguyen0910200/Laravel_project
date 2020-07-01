@@ -23,6 +23,9 @@
 		<li class="nav-item">
 			<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Manage Users</a>
 		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Manage Orders</a>
+		</li>
 	</ul>
 	<div class="tab-content">
 		<div class="tab-pane active" id="tabs-1" role="tabpanel">
@@ -44,7 +47,7 @@
 				<tr>
 					<th>
 						{{ $todo->name}}
-                    </th>
+					</th>
 					<th style="color: #f8c6c7">
 						{{number_format($todo->oldPrice)}}VND
 					</th>
@@ -103,6 +106,44 @@
 							<button type="submit" class="btn btn-outline-success">Delete</button>
 						</form>
 					</th>
+				</tr>
+				@endforeach
+			</table>
+		</div>
+		<div class="tab-pane" id="tabs-3" role="tabpanel">
+			<h1 style="text-align: center;color: #ff828d;">Manage Orders</h1><br>
+			<table class="table">
+				<tr style="color:#ff828d; font-size: large;font-weight: bold;">
+					<th>User_id</th>
+					<th>Name</th>
+					<th>Phone</th>
+					<th>Address</th>
+					<th>Detail</th>
+				</tr>
+				@foreach($orders as $orders)
+				<tr>
+					<td>
+						{{ $orders->user_id}}
+					</td>
+					<td>
+						{{ $orders->name}}
+					</td>
+					<td>
+						{{ $orders->phone}}
+					</td>
+					<td>
+						{{ $orders->address}}
+					</td>
+					<td>
+						{{ $orders->detail}}
+					</td>
+					<td>
+						<form method="POST" action="/admin/dashboard/{{$orders->id}}">
+							@csrf
+							@method("DELETE")
+							<button type="submit" class="btn btn-outline-success">Delete</button>
+						</form>
+					</td>
 				</tr>
 				@endforeach
 			</table>

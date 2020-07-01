@@ -14,7 +14,8 @@ class DashboardController extends Controller
 	function index(){
 		$son=DB::table("sons")->get();
 		$users = DB::table("users")->get();
-		return view("admin.dashboard",["sons"=>$son, "users" => $users]);
+		$orders = DB::table("orders")->get();
+		return view("admin.dashboard",["sons"=>$son, "users" => $users, "orders" =>$orders]);
 
 	}
 	
