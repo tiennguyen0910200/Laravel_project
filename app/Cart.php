@@ -10,4 +10,7 @@ class Cart extends Model
     	$formatedPrice = number_format($this->price,0,',','.');
     	return $formatedPrice . "VND";
     }
+    public function products(){
+        return $this->belongsTo("App\Product", "product_id", "id");
+    }
 }

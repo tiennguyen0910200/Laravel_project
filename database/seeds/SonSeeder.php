@@ -16,8 +16,9 @@ class SonSeeder extends Seeder
        
     	DB::table('sons')->insert([
     		'discount' => $faker->numberBetween(20,50),
-    		'img' => "public/PhuQuoc.jfif",
+    		'img' => "public/mac.jpg",
     		'name' => Str::random(20),
+            'quantity' => 5,
     		'description' => Str::random(20),
     		'oldPrice'=>$faker->numberBetween(400,600),
     		'newPrice' =>$faker->numberBetween(100,400)

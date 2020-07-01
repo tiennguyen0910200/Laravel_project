@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableSons extends Migration
+class CreateTableOrders extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreateTableSons extends Migration
      */
     public function up()
     {
-        Schema::create('sons', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('discount');
-            $table->string('img');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('name');
-            $table->integer('quantity');
-            $table->string('description');
-            $table->string('oldPrice');
-            $table->string('newPrice');
+            $table->string('phone');
+            $table->string('address');
+            $table->longText('detail');
+            $table->integer('total');
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ class CreateTableSons extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sons');
+        Schema::dropIfExists('orders');
     }
 }

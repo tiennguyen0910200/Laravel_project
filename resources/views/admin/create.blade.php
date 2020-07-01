@@ -18,6 +18,10 @@
 				<input type="text" class="form-control" name = "name">
 			</div>
 			<div class="form-group">
+				<label for="title" style="float: left; font-size: 18px;"> Quantity</label>
+				<input type="text" class="form-control" name = "quantity">
+			</div>
+			<div class="form-group">
 				<label for="title" style="float: left; font-size: 18px;"> Description</label>
 				<input type="text" class="form-control" name = "description">
 			</div>

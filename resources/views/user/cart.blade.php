@@ -50,33 +50,11 @@
 			</tr>
 			@endforeach
 		</table>
-		<hr>
-		<div style="display: flex;">
-			<div style="display: flex; height: 30px;">
-				<input type="text" name="" placeholder="Nhập mã giảm">
-				<button type="button" class="btn btn-warning">Áp dụng mã giảm</button>
-			</div>&emsp;
-			<div>
-				<h2>Tổng Giỏ Hàng</h2>
-				<h5><?php
-				$total = 0;
-				?>
-				Tạm Tính:
-				<?php
-				foreach ($cartdata as $cart) {
-					$total = $total + ($cart->newPrice * $cart->quantity);
-				}
-				echo number_format($total);
-				?>VND</h5>
-				<h5>Giao Nhận: </h5>
-				<h5>Giảm: </h5>
-				<h4><b>Tổng tiền thanh toán: {{number_format($total)}}VND</b></h4>
-				<form method="GET" action="/user/pay">
+		<hr><br>
+				<center><form method="GET" action="/user/pay">
 					<button type="submit" class="btn btn-danger">Thanh Toán</button>
-				</form>
-			</div>
-		</div>
-
+				</form></center>
+	    <br>
 		@include('partials\foot')
 	</body>
 	</html>

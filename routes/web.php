@@ -41,6 +41,7 @@ Route::get('/user/cart/{id}/increase',"Auth\CartController@increase");
 Route::get('/user/cart/{id}/crease',"Auth\CartController@crease");
 Route::get('/user/search',"User\HomeController@search");
 Route::get('/user/pay',"User\HomeController@pay");
+Route::get('/user/order',"User\HomeController@order");
 
  
 

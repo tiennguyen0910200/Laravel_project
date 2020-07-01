@@ -9,6 +9,8 @@
 		@method("PATCH")
 		<h4>Name: </h4>
 		<input type="" name="name" value="{{$data -> name}}">
+		<h4>Quantity: </h4>
+		<input type="" name="quantity" value="{{$data -> quantity}}">
 		<h4>Old Price: </h4>
 		<input type="" name="oldPrice" value="{{$data -> oldPrice}}">
 		<h4>New Price: </h4>

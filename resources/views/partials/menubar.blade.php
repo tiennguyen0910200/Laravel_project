@@ -151,9 +151,9 @@
 		<div class="subnav">
 			<a class="subnavbtn" href="">New Lipstick <i class="fa fa-caret-down"></i></a>
 			<div class="subnav-content">
-				<a href="#deliver">3CE Xanh</a>
-				<a href="#package">Missha</a>
-				<a href="#express">Innisfree</a>
+				<a href="https://3ce.beco.vn/?gclid=EAIaIQobChMIiIzo74ur6gIVR7aWCh1PlA9OEAAYASAAEgKF1_D_BwE">3CE Xanh</a>
+				<a href="https://thegioiskinfood.com/products/son-thoi-sieu-li-missha-dare-rouge-velvet-lipstick">Missha</a>
+				<a href="https://jeju.com.vn/tu-khoa/son/">Innisfree</a>
 			</div>
 		</div>
 		<div class="subnav">

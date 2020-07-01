@@ -24,6 +24,7 @@ class DashboardController extends Controller
 		$filePath =$request->file('img')->store("public");
 		$discount= $request->input("discount");
 		$name=  $request->input("name");
+		$quantity = $request->input("quantity");
 		$description= $request->input("description");
 		$oldPrice= $request->input("oldPrice");
 		$newPrice= $request->input("newPrice");
@@ -31,6 +32,7 @@ class DashboardController extends Controller
 			["img" => $filePath,
 			"discount" => $discount, 
 			"name" => $name,
+			"quantity" => $quantity,
 			"description" =>$description, 
 			"oldPrice" => $oldPrice,
 			"newPrice" => $newPrice]
@@ -49,12 +51,13 @@ class DashboardController extends Controller
 	}
 	function update($id, Request $request){
 		$name = $request->name;
+		$quantity = $request->quantity;
 		$oldPrice = $request->oldPrice;
 		$newPrice = $request->newPrice;
         $img = $request->file('img')->store("public");
       	// $ing =str_replace("public", "storage", $img);
 
-		DB::table('sons')->where("id",$id)->update(["name"=>$name,"oldPrice"=>$oldPrice,"newPrice"=>$newPrice,"img"=>$img]);
+		DB::table('sons')->where("id",$id)->update(["name"=>$name,"quantity"=>$quantity,"oldPrice"=>$oldPrice,"newPrice"=>$newPrice,"img"=>$img]);
 		return redirect('admin/dashboard');
 
 	}
