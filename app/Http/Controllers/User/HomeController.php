@@ -31,11 +31,11 @@ function cart(Request $req){
    return view("user.cart",compact('sanpham'));
 }
 function search(Request $request)
-{
-    $txt = $request->input('txtSearch');
-    $search = DB::table('sons')->where('name', 'LIKE', '%' . $txt . '%')->get();
-    return view('user.search', ['research' => $search]);
-}
+    {
+        $txt = $request->input('txtSearch');
+        $search = DB::table('sons')->where('name', 'LIKE', '%' . $txt . '%')->get();
+        return view('user.search', ['research' => $search]);
+    }
 function pay(){
     $carts=DB::table('carts')->where("user_id", Auth::user()->id)->get();
     foreach ($carts as $cart) {

@@ -149,6 +149,7 @@
 			</table>
 		</div>
 	</div>
+	<br>
 	@include('partials\foot')
 </body>
 </html>

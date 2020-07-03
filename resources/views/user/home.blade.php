@@ -34,7 +34,7 @@
 
 					<div style="display: flex; justify-content: center;">
 						<strike><h4 style="color: #f8c6c7" >{{number_format($todo->oldPrice)}}VND</h4></strike>
-						<h4 style="margin-left: 60px; color: #de030a">{{number_format($todo->newPrice)}}VND</h4>
+						<h4 style="margin-left: 30px; color: #de030a">{{number_format($todo->newPrice)}}VND</h4>
 					</div>
 					<br>
 					<center><span class="fa fa-star checked"></span>
@@ -66,7 +66,7 @@
 
 						<div style="display: flex; justify-content: center;">
 							<strike><h4 style="color: #f8c6c7" >{{number_format($todo->oldPrice)}}VND</h4></strike>
-							<h4 style="margin-left: 60px; color: #de030a">{{number_format($todo->newPrice)}}VND</h4>
+							<h4 style="margin-left: 30px; color: #de030a">{{number_format($todo->newPrice)}}VND</h4>
 						</div>
 						<br>
 						<center><span class="fa fa-star checked"></span>

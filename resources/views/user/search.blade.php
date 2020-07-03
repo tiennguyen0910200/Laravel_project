@@ -14,6 +14,7 @@
 
 <body>
     @include('partials\head')<br>
+    <a href="/home" style="text-decoration: none;">Home</a>
     <div class="container">
             <div class="row" >
                @foreach ($research as $search)
@@ -23,7 +24,7 @@
                         <h2 class="name"><b>{{$search->name}}</b></h2>
                             <div style="display: flex; justify-content: center;">
                             <strike><h4 style="color: #f8c6c7" >{{number_format($search->oldPrice)}}VND</h4></strike>
-                            <h4 style="margin-left: 60px; color: #de030a">{{number_format($search->newPrice)}}VND</h4>
+                            <h4 style="margin-left: 30px; color: #de030a">{{number_format($search->newPrice)}}VND</h4>
                         </div>
                         <br>
                         <center><span class="fa fa-star checked"></span>

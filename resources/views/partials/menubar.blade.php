@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<style type="text/css">
 		/* Navbar container */
 		.navbar1 {
@@ -174,9 +175,11 @@
 				<a href="#link4">Link 4</a>
 			</div>
 		</div>
-		<div class="col-sm-6" style="margin-right: -550px;">
+		<div class="col-sm-6" style="margin-right: -550px; display: flex;">
+			<i class="far fa-sort-size-up-alt"></i>
+			<i class="fal fa-sort-size-down-alt"></i>
 			<form class="search-form" action="/user/search">
-				<input type="search" name="search" placeholder="Search">
+				<input type="search" name="txtSearch" placeholder="Search">
 			</form>
 		</div>
 	</div>
